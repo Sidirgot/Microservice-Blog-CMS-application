@@ -1,11 +1,13 @@
 import Post from "#root/models/Post";
 
 class PostController {
-  // index
+  /**
+   * Fetch all posts.
+   */
   static async index() {
     const results = await Post.findAll();
 
-    res.json(results);
+    return results;
   }
   // create
   // update

@@ -20,6 +20,11 @@ module.exports = {
           allowNull: false,
           type: Sequelize.DataTypes.TEXT,
         },
+        status: {
+          allowNull: false,
+          type: Sequelize.DataTypes.BOOLEAN,
+          defaultValue: false,
+        },
         createdAt: {
           allowNull: false,
           type: Sequelize.DataTypes.DATE,
@@ -28,7 +33,7 @@ module.exports = {
           allowNull: false,
           type: Sequelize.DataTypes.DATE,
         },
-        expiresAt: {
+        deletedAt: {
           allowNull: false,
           type: Sequelize.DataTypes.DATE,
         },
