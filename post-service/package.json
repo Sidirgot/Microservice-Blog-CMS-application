@@ -18,7 +18,9 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "helmet": "^4.2.0"
+    "helmet": "^4.2.0",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "babel-watch": "^7.0.0"

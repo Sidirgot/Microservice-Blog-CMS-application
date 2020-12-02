@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 app.use("/api", api);
 
 app.use(middlewares.notFound);
+app.use(middlewares.errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Listening: ${PORT}`);
