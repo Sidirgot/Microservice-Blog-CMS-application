@@ -4,10 +4,11 @@ import helmet from "helmet";
 import bodyParser from "body-parser";
 import api from "#root/api";
 import middlewares from "#root/middlewares";
+import accessEnv from "#root/helpers/accessEnv";
 
 const app = express();
 
-const PORT = 5000;
+const PORT = accessEnv("PORT", 5000);
 
 const corsConfig = {
   origin: (origin, cb) => cb(null, true),

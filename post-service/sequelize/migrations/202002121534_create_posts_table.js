@@ -4,12 +4,12 @@ module.exports = {
       id: {
         allowNull: false,
         primaryKey: true,
-        type: Sequelize.DataTypes.UUIDV4,
+        type: Sequelize.UUIDV4,
       },
       title: {
         allowNull: false,
         unique: true,
-        type: Sequelize.DataTypes.TEXT,
+        type: Sequelize.DataTypes.STRING,
       },
       description: {
         allowNull: false,
