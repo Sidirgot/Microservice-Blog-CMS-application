@@ -21,6 +21,7 @@
   },
   "alias": {
     "#root": "./src",
-    "#assets": "./public/assets"
+    "#assets": "./public/assets",
+    "#pages": "./src/components/pages"
   }
 }

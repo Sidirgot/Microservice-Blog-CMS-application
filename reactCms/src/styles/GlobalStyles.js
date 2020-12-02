@@ -14,6 +14,15 @@ const GlobalStyles = createGlobalStyle`
         font-family: DIN, Helvetica Neue, Helvetica, Arial, sans-serif;
         letter-spacing: 0.123rem;
     }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 300ms ease-in-out;
+      &:hover {
+        color: #3182CE;
+      }
+    }
 `;
 
 export const theme = {
@@ -26,6 +35,7 @@ export const theme = {
   button_edit: "#D69E2E",
   button_red: "#E53E3E",
   blue: "#3182CE",
+  blue_darker: "#2872b8",
   green: "#38A169",
   yellow: "#D69E2E",
   red: "#E53E3E",
