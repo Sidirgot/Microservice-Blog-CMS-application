@@ -23,6 +23,7 @@ Posts.init(
     status: {
       allowNull: false,
       type: Sequelize.DataTypes.BOOLEAN,
+      defaultValue: false,
     },
     deletedAt: {
       allowNull: false,
@@ -32,6 +33,7 @@ Posts.init(
   {
     sequelize: db_connection,
     modelName: "Posts",
-    timestamps: true,
   }
 );
+
+export default Posts;
