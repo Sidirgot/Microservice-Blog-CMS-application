@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BtnPrimary } from "#root/components/shared/buttons";
 import { PageTitle } from "../../shared/page";
@@ -23,11 +24,11 @@ const Posts = () => {
         <div>
           <PageTitle>Posts</PageTitle>
         </div>
-        <div>
+        <Link to="/admin/posts/show">
           <BtnPrimary>
             New Post <BtnSymbol>&#43;</BtnSymbol>
           </BtnPrimary>
-        </div>
+        </Link>
       </Header>
     </Wrapper>
   );

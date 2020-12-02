@@ -37,6 +37,7 @@ const Root = () => {
                 {Routes.map((route, index) => (
                   <Route
                     key={index}
+                    exact
                     path={route.pathname}
                     component={route.component}
                   />
