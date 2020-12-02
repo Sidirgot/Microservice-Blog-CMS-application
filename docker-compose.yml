@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  post-service:
+    build:
+      context: ./post-service
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_URI=mysql://root:password@post-service_db/db?charset=UTF8
+    volumes:
+      - ./post-service:/usr/post-service
+
+  post-service_db:
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=db
+    image: mysql:8.0
+    ports:
+      - 0.0.0.0:7200:3306
+    cap_add:
+      - SYS_NICE
