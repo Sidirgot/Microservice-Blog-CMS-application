@@ -23,6 +23,10 @@ const GlobalStyles = createGlobalStyle`
         color: #3182CE;
       }
     }
+
+    .active {
+      color: #2872b8;
+    }
 `;
 
 export const theme = {

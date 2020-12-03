@@ -1,25 +1,30 @@
-import styled from "styled-components";
+import React from "react";
+import { BtnPrimary, BtnSymbol, NoBG } from "#root/styles/shared/buttons";
 
-export const BtnPrimary = styled.button`
-  background-color: ${(props) => props.theme.button_primary};
-  outline: none;
-  border: none;
-  border-radius: 0.2rem;
-  padding: 1rem;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
-  user-select: none;
-  transition: opacity 300ms ease-in-out;
-  &:hover {
-    opacity: 0.5;
-  }
-`;
+export const NewEntryBtn = () => {
+  return (
+    <BtnPrimary>
+      New Post <BtnSymbol>&#43;</BtnSymbol>
+    </BtnPrimary>
+  );
+};
 
-export const BtnSymbol = styled.span`
-  background-color: ${(props) => props.theme.blue_darker};
-  border-radius: 10rem;
-  padding: 0.5rem;
-  margin: 0 0.2rem;
-  font-size: 18px;
-`;
+export const BackBtn = () => {
+  return (
+    <BtnPrimary>
+      <BtnSymbol>&#9166;</BtnSymbol> Back
+    </BtnPrimary>
+  );
+};
+
+export const ShowBtn = () => {
+  return <NoBG type="show">&#128065;</NoBG>;
+};
+
+export const EditBtn = () => {
+  return <NoBG type="edit">&#9998;</NoBG>;
+};
+
+export const DeleteBtn = () => {
+  return <NoBG type="delete">&#128465;</NoBG>;
+};
